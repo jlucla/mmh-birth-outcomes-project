@@ -1,0 +1,114 @@
+variable_name,variable_type,variable_description
+country_US,binary,Whether the country was the United States (1) or not (0)
+sex_male,binary,"Baby's sex: Female (0), Male (1)"
+race_ai_an,binary,"Baby's race - American Indian/Alaskan Native: Yes (1), No (0) "
+race_asian,binary,"Baby's race - Asian: Yes (1), No (0) "
+race_black,binary,"Baby's race - Black/African American: Yes (1), No (0) "
+race_hispanic,binary,"Baby's race - Hispanic, Latino, Spanish origin: Yes (1), No (0) "
+race_pi,binary,"Baby's race - Native Hawaiian or other Pacific Islander: Yes (1), No (0) "
+race_mena,binary,"Baby's race - Middle Eastern/North African: Yes (1), No (0) "
+race_white,binary,"Baby's race - White: Yes (1), No (0) "
+momsdeliveryage,integer,Mother's Age at Delivery
+momsage_over35,binary,"Mother's Age Over 35: Yes (1), No (0)"
+dadsdeliveryage,integer,Father's Age at Delivery
+momsedu,factor,"Mother's Education (Levels: Less than high school, high school graduate, some college, Bachelor's Degree, Graduate Degree)"
+dadsedu,factor,"Father's Education (Levels: Less than high school, high school graduate, some college, Bachelor's Degree, Graduate Degree)"
+marriage,factor,"Current Marital Status of Mother (Levels: Married, Never Married, Previously Married)"
+art,binary,"Whether the baby was conceived with the help of assisted reproductive technology (ART) such as IVF, IUI, etc... (1) or not (0) "
+artmethod___1,binary,Whether In vitro fertilization (IVF) was used (1) or not (0)
+artmethod___7,binary,Whether Intrauterine insemination (IUI) was used (1) or not (0)
+artmethod___6,binary,Whether Intracytoplasmic sperm injection (ICSI) was used (1) or not (0)
+artmethod___2,binary,Whether egg donation was used (1) or not (0)
+artmethod___3,binary,Whether sperm donation (IVF) was used (1) or not (0)
+artmethod___4,binary,Whether embryo adoption (IVF) was used (1) or not (0)
+artmethod___5,binary,Whether other ART was used (1) or not (0)
+maternalpregnancyproblems___1,binary,Whether the mother experienced gestational diabetes (1) or not (0)
+maternalpregnancyproblems___2,binary,Whether the mother experienced Infections requiring antibiotics (1) or not (0)
+maternalpregnancyproblems___3,binary,Whether the mother experienced Placenta previa (1) or not (0)
+maternalpregnancyproblems___15,binary,Whether the mother experienced Placenta accreta (1) or not (0)
+maternalpregnancyproblems___21,binary,Whether the mother experienced Chorioamnionitis (1) or not (0)
+maternalpregnancyproblems___16,binary,Whether the mother experienced Hyperemesis gravidarum (1) or not (0)
+maternalpregnancyproblems___4,binary,Whether the mother experienced Antidepressants to treat depression (1) or not (0)
+maternalpregnancyproblems___5,binary,Whether the mother experienced Anticonvulsants to treat seizures (1) or not (0)
+maternalpregnancyproblems___6,binary,Whether the mother experienced Intrauterine growth restriction (IUGR) (1) or not (0)
+maternalpregnancyproblems___7,binary,Whether the mother experienced Preeclampsia/eclampsia (1) or not (0)
+maternalpregnancyproblems___8,binary,Whether the mother experienced Anemia (1) or not (0)
+maternalpregnancyproblems___9,binary,"Whether the mother experienced Hypertension (high blood
+pressure) (1) or not (0)"
+maternalpregnancyproblems___10,binary,Whether the mother had a history of recurrent miscarriage/ recurrent pregnancy loss (1) or not (0)
+maternalpregnancyproblems___11,binary,Whether the mother experienced Preterm labor (1) or not (0)
+maternalpregnancyproblems___12,binary,"Whether the mother experienced Cerclage, cervical incompetence, or insufficiency (1) or not (0)"
+maternalpregnancyproblems___13,binary,Whether the mother experienced Placental abruption (1) or not (0)
+maternalpregnancyproblems___14,binary,Whether the mother experienced Vaginal bleeding (1) or not (0)
+maternalpregnancyproblems___17,binary,"Whether the mother experienced treatment with opioids including Subutex (buprenorphine), suboxone, methadone (1) or not (0)"
+maternalpregnancyproblems___19,binary,Whether the mother experienced Perinatal or Post-partum depression (1) or not (0)
+maternalpregnancyproblems___20,binary,Whether the mother experienced Perinatal or Post-partum psychosis (1) or not (0)
+maternalpregnancyproblems___18,binary,"Whether the mother experienced other interventions, complications, or abnormalities during their pregnancy (1) or not (0)"
+mom_trauma,binary,Whether the mother experienced any extremely stressful event during pregnancy (1) or not (0)
+matmentalhealth___1,binary,"Whether the mother was diagnosed with depression before, during, or after
+pregnancy (1) or not (0) "
+matmentalhealth___2,binary,"Whether the mother was diagnosed with anxiety before, during, or after
+pregnancy (1) or not (0) "
+matmentalhealth___3,binary,"Whether the mother was diagnosed with obsessive compulsive disorder before, during, or after
+pregnancy (1) or not (0) "
+matmentalhealth___4,binary,"Whether the mother was diagnosed with bipolar disorder before, during, or after
+pregnancy (1) or not (0) "
+matmentalhealth___5,binary,"Whether the mother was diagnosed with ADHD before, during, or after
+pregnancy (1) or not (0) "
+matmentalhealth___6,binary,"Whether the mother was diagnosed with psychosis, schizophrenia, or schizoaffective disorder before, during, or after
+pregnancy (1) or not (0) "
+matmentalhealth___7,binary,"Whether the mother was diagnosed with any other mental health conditions before, during, or after pregnancy (1) or not (0) "
+mat_dep,integer,depression (1 = Before Pregnancy; 2 = During Pregnancy; 3 = After Pregnancy)
+mat_anx,integer,anxiety (1 = Before Pregnancy; 2 = During Pregnancy; 3 = After Pregnancy)
+mat_ocd,integer,obsessive compulsive disorder (1 = Before Pregnancy; 2 = During Pregnancy; 3 = After Pregnancy)
+mat_bp,integer,bipolar disorder (1 = Before Pregnancy; 2 = During Pregnancy; 3 = After Pregnancy)
+mat_adhd,integer,ADHD (1 = Before Pregnancy; 2 = During Pregnancy; 3 = After Pregnancy)
+mat_pssd,integer,"psychosis, schizophrenia, or schizoaffective disorder (1 = Before Pregnancy; 2 = During Pregnancy; 3 = After Pregnancy)"
+mh_count,integer,How many mental health conditions each mother is diagnosed with
+mh_count_cat,factor,"How many mental health conditions each mother is diagnosed with: No Conditions, One Condition, Two Conditions, Three or More Conditions"
+any_mh,binary,If the mother has a mental health condition (1) or not (0)
+momfever,binary,"Whether the mother had a fever (>101F, 38.3C) during pregnancy (1) or not (0)"
+whenfever___1,binary,If the mother had a fever during their first trimester (weeks 1-12) (1) or not (0)
+whenfever___2,binary,If the mother had a fever during their Second trimester (weeks 13-27) (1) or not (0)
+whenfever___3,binary,"If the mother had a fever during their Third
+Trimester (weeks 28-40) (1) or not (0)"
+momcovid,binary,If the mother was infected with COVID-19 either before or during pregnancy (1) or not (0) 
+covidvaccine,binary,If the mother received a vaccine for COVID-19 (1) or not (0)
+covidvaccinewhich,factor,"Which COVID-19 vaccine did mother receive? 1 = Moderna, 2 = Oxford/AstraZeneca, 3 = Pfizer/BioNTech, 4 = Janssen (Johnson & Johnson, 5 = Serum Institute of India. Covishield (Oxford/AstraZeneca formulation), 6 = Sinopharm (Beijing), 7 = Sinovac/CoronaVac, 8 = Sputnik V, 9 = Other "
+covidbaby,binary,If the baby ever diagnosed with COVID-19 (1) or not (0)
+babygestation,integer,How many weeks was mother's pregnancy with baby
+delivery,factor,"How the baby was delivered. 1 = Unassisted Vaginal Birth , 2 = Assisted Vaginal Birth (forceps, vacuum) , 3 = Planned Caesarean , 4 = Emergency Caesarean "
+momlivebirths,integer,"How many total live births has the mother had, including the baby"
+totalpregnancies,integer,"How many total pregnancies has the mother had, including the baby"
+nicuplacement,binary,If the baby was hospitalized in the Neonatal Intensive Care Unit (NICU) following delivery (1) or not (0)
+twins_binary,binary,"Birth type: Multiple Births (1), Single Birth (0)"
+mat_dep_before_during,binary,1 IF mat_dep = 1 OR 2; 0 otherwise
+mat_dep_after,binary,1 IF mat_dep = 3; 0 otherwise
+mat_anx_before_during,binary,1 IF mat_anx = 1 OR 2; 0 otherwise
+mat_anx_after,binary,1 IF mat_anx = 3; 0 otherwise
+mat_ocd_before_during,binary,1 IF mat_ocd = 1 OR 2; 0 otherwise
+mat_ocd_after,binary,1 IF mat_ocd = 3; 0 otherwise
+mat_bp_before_during,binary,1 IF mat_bp = 1 OR 2; 0 otherwise
+mat_bp_after,binary,1 IF mat_pd = 3; 0 otherwise
+mat_adhd_before_during,binary,1 IF mat_adhd = 1 OR 2; 0 otherwise
+mat_adhd_after,binary,1 IF mat_adhd = 3; 0 otherwise
+mat_pssd_before_during,binary,1 IF mat_pssd = 1 OR 2; 0 otherwise
+mat_pssd_after,binary,1 IF mat_pssd = 3; 0 otherwise
+trauma_emotional,binary,"Whether the mother experienced any emotional trauma (1) or not (0). Emotional trauma included emotional abuse, neglect, and grief or separation."
+trauma_physical,binary,"Whether the mother experienced any physical trauma (1) or not (0). Physical trauma included sexual abuse/assault, physical abuse/assault, domestic violence, extreme interpersonal violence, serious accident/illness, or natural/manmade disasters. "
+trauma_other,binary,"Whether the mother experience any other traumas (1) or not (0). Other trauma included community violence, school violence, bullying, war/terrorism/political violence, forced displacement, military trauma, or other"
+trauma_interpersonal,binary,"Whether the mother experienced any interpersonal trauma (1) or not (0). Interpersonal trauma included sexual abuse/assault, physical abuse/assault, domestic violence, and extreme interpersonal violence."
+trauma_maltreatment,binary,Whether the mother experienced any emotional trauma (1) or not (0). Emotional trauma included emotional abuse and neglect.
+trauma_community,binary,"Whether the mother experienced any community/societal violence (1) or not (0). Community/societal violence included community violence, school violence, and bullying."
+trauma_collective,binary,"Whether the mother experienced any collective/political trauma (1) or not (0). Collective/political trauma included war/terrorism/political violence, natural/manmade disasters, forced displacement, and military trauma."
+trauma_loss_medical,binary,Whether the mother experienced any loss or medical trauma (1) or not (0). Loss or medical trauma included serious accident/illness and traumatic grief/separation.
+ddfamily_sibling,binary,Whether any of the baby's siblings (half or full) experienced any developmental delay while an infant (1) or not (0)
+szbpfamily_sibling,binary,Whether any of the baby's siblings (half or full) have a diagnosis of Schizophrenia or Bipolar Disorder (1) or not (0)
+tobacco_binary,binary,Binary variable indicating whether a mother had reported tobacco exposure
+drugs_alcohol_tobacco_binary,binary,Binary variable indicating whether a mother had reported drugs or alcohol exposure
+cannabis_or_alcohol,binary,Binary variable indicating whether a mother had reported cannabis or alcohol exposure
+other_drugs,binary,"If any stimulants, opioids psychoactive drugs, or other drugs were used during the pregnancy (1) or not (0)"
+art_any,binary,If any ART was used for the pregnancy (1) or not (0)
+art_method_missing,binary,If the mother used ART but did not specify which method (1) or no ART used (0)
+fever_when_missing,binary,If them mother had a fever but did not indicate during which trimester it occurred (1) or no fever (0)
+fever_any,binary,If the mother experienced a fever during the pregnancy (1) or not (0)
