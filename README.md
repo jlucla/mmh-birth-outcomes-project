@@ -1,45 +1,52 @@
-#Impact of Maternal Mental Health on Birth Outcomes
-##Overview
+# Impact of Maternal Mental Health on Birth Outcomes
 
-This project was completed as part of a UCLA capstone statistical consulting course (February–March 2026) for an on-campus client. Our team analyzed survey data collected through the ChatterBaby mobile application to investigate the relationship between maternal mental health conditions during pregnancy and birth outcomes.
+## Overview
 
-The primary outcomes of interest were gestational age and NICU admission, while maternal mental health was measured using self-reported diagnoses including depression, anxiety, OCD, ADHD, bipolar disorder, and related conditions.
+This project was completed as part of a UCLA capstone statistical consulting course for an on-campus client. Our team analyzed survey data collected through the ChatterBaby mobile application to examine the relationship between maternal mental health conditions and birth outcomes.
 
-##Data Preparation
+The primary outcomes were:
 
-The original survey dataset contained over 250 variables per respondent and required extensive preprocessing prior to analysis. Data cleaning included:
+- Gestational age
+- NICU admission
 
-Removing variables not relevant to the research questions
-Identifying and correcting biologically implausible values
-Excluding incomplete survey responses
-Recoding and consolidating sparse categorical variables
-Creating derived variables for maternal mental health, demographic characteristics, and pregnancy-related factors
+Maternal mental health was measured using self-reported conditions before or during pregnancy, including depression, anxiety, OCD, ADHD, bipolar disorder, and related conditions.
 
-Following the client's specifications, complete-case analysis was performed for the primary outcome variables.
+## Data Preparation
 
-##Methods
+The original survey dataset contained over 250 variables per respondent and required extensive cleaning before analysis. The preprocessing workflow included:
 
-Statistical analyses were conducted in R using packages including tidyverse, ggplot2, dplyr, stringr, corrplot, and scales.
+- Removing variables not relevant to the research questions
+- Identifying biologically implausible values
+- Excluding incomplete survey responses
+- Recoding and consolidating sparse categorical variables
+- Creating derived variables for maternal mental health, demographics, and pregnancy-related factors
 
-Analytical methods included:
+Following the client's specifications, complete-case analysis was used for the primary outcome variables.
 
-Multiple linear regression for gestational age
-Logistic regression for NICU admission
-Sensitivity analyses using alternative specifications of maternal age
+## Methods
 
-Maternal mental health was modeled using multiple operationalizations, including binary indicators, condition counts, and individual diagnoses to evaluate overall, dose-response, and condition-specific associations.
+All analyses were performed in R. Methods included:
 
-##Key Findings
-Maternal mental health conditions reported before or during pregnancy were significantly associated with shorter gestational age.
-A dose-response relationship was observed, with increasing numbers of reported mental health conditions associated with progressively shorter gestational age.
-Depression was the individual condition most strongly associated with reduced gestational age.
-Maternal mental health was not independently associated with NICU admission after adjusting for gestational age, suggesting gestational age may mediate much of the observed relationship.
+- Multiple linear regression for gestational age
+- Logistic regression for NICU admission
+- Sensitivity analyses using alternative specifications of maternal age
 
-###Repository Contents
-- Data preprocessing code
-- Statistical modeling code
+Maternal mental health was modeled using several approaches, including binary indicators, condition counts, and individual diagnoses.
+
+## Key Findings
+
+- Maternal mental health conditions before or during pregnancy were significantly associated with shorter gestational age.
+- A dose-response relationship was observed, with more reported mental health conditions associated with progressively shorter gestational age.
+- Depression was the individual condition most strongly associated with reduced gestational age.
+- Maternal mental health was not independently associated with NICU admission after adjusting for gestational age.
+
+## Repository Contents
+
+- Data cleaning and preprocessing scripts
+- Statistical modeling workflows
 - Variable dictionary
 - Final project report
 
-Note: The original survey data are not included in this repository because they were provided for a client consulting project and cannot be publicly redistributed. The repository focuses on the analytical workflow and reproducible statistical methods.
+## Data Availability
 
+The original survey data are not included in this repository because they were provided for a client consulting project and cannot be publicly redistributed. This repository focuses on the analytical workflow, documentation, and statistical methods.
