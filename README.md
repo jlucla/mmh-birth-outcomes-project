@@ -49,4 +49,4 @@ Maternal mental health was modeled using several approaches, including binary in
 
 ## Data Availability
 
-The original survey data are not included in this repository because they were provided for a client consulting project and cannot be publicly redistributed. This repository focuses on the analytical workflow, documentation, and statistical methods.
+Out of caution for subject confidentiality, the raw and cleaned survey datasets are not available for redistribution.
