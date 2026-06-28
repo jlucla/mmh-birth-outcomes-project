@@ -1,15 +1,45 @@
-# Overview
+#Impact of Maternal Mental Health on Birth Outcomes
+##Overview
 
-This project was conducted for an on-campus client for a capstone statistical consulting class at UCLA from February to March 2026.
+This project was completed as part of a UCLA capstone statistical consulting course (February–March 2026) for an on-campus client. Our team analyzed survey data collected through the ChatterBaby mobile application to investigate the relationship between maternal mental health conditions during pregnancy and birth outcomes.
 
-I worked in a team to analyze survey data collected on the [Chatterbaby](https://chatterbaby.org) app, a free application that uses artificial intelligence to identify different types of infant cries. Each row in the raw dataset represents a single survey respondent, as well as answers to demographic and clinical questions.
+The primary outcomes of interest were gestational age and NICU admission, while maternal mental health was measured using self-reported diagnoses including depression, anxiety, OCD, ADHD, bipolar disorder, and related conditions.
 
-The client’s goal was to understand how adverse maternal mental health affects birth outcomes. “Adverse maternal mental health” is operationalized as: self-reported depression, ADHD, OCD, bipolar disorder, psychosis/schizophrenia/schizoaffective disorder before or during pregnancy. “Birth outcomes” are operationalized using the outcome variables:
+##Data Preparation
 
-- Gestational age (i.e. pregnancy length): a continuous variable
+The original survey dataset contained over 250 variables per respondent and required extensive preprocessing prior to analysis. Data cleaning included:
 
-- NICU placement (probability of an infant’s admission to the Neonatal Intensive Care Unit): a binary factor (YES = 1, NO = 0)
+Removing variables not relevant to the research questions
+Identifying and correcting biologically implausible values
+Excluding incomplete survey responses
+Recoding and consolidating sparse categorical variables
+Creating derived variables for maternal mental health, demographic characteristics, and pregnancy-related factors
 
-It is known that premature birth and NICU placement are associated with infant well-being later in life (including future autism diagnosis).
+Following the client's specifications, complete-case analysis was performed for the primary outcome variables.
 
-*Out of caution for subject confidentiality, the raw and cleaned survey datasets are omitted from this repository, though preprocessing and modeling code have been included.*
+##Methods
+
+Statistical analyses were conducted in R using packages including tidyverse, ggplot2, dplyr, stringr, corrplot, and scales.
+
+Analytical methods included:
+
+Multiple linear regression for gestational age
+Logistic regression for NICU admission
+Sensitivity analyses using alternative specifications of maternal age
+
+Maternal mental health was modeled using multiple operationalizations, including binary indicators, condition counts, and individual diagnoses to evaluate overall, dose-response, and condition-specific associations.
+
+##Key Findings
+Maternal mental health conditions reported before or during pregnancy were significantly associated with shorter gestational age.
+A dose-response relationship was observed, with increasing numbers of reported mental health conditions associated with progressively shorter gestational age.
+Depression was the individual condition most strongly associated with reduced gestational age.
+Maternal mental health was not independently associated with NICU admission after adjusting for gestational age, suggesting gestational age may mediate much of the observed relationship.
+
+###Repository Contents
+- Data preprocessing code
+- Statistical modeling code
+- Variable dictionary
+- Final project report
+
+Note: The original survey data are not included in this repository because they were provided for a client consulting project and cannot be publicly redistributed. The repository focuses on the analytical workflow and reproducible statistical methods.
+
