@@ -12,4 +12,4 @@ The client’s goal was to understand how adverse maternal mental health affects
 
 It is known that premature birth and NICU placement are associated with infant well-being later in life (including future autism diagnosis).
 
-*The original survey dataset cannot be redistributed because it was provided as part of a client consulting project involving human-subject research.*
+*Out of caution for subject confidentiality, the raw and cleaned survey datasets are omitted from this repository.*
