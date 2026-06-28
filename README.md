@@ -11,3 +11,5 @@ The client’s goal was to understand how adverse maternal mental health affects
 - NICU placement (probability of an infant’s admission to the Neonatal Intensive Care Unit): a binary factor (YES = 1, NO = 0)
 
 It is known that premature birth and NICU placement are associated with infant well-being later in life (including future autism diagnosis).
+
+*The original survey dataset cannot be redistributed because it was provided as part of a client consulting project involving human-subject research. The repository contains the complete analysis pipeline and documentation, but the underlying data have been omitted.*
